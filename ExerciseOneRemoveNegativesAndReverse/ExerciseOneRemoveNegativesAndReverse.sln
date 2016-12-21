@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExerciseOneRemoveNegativesA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExerciseTwoAppendLists", "ExerciseTwoAppendLists\ExerciseTwoAppendLists.csproj", "{FBA26F7C-2B4B-4F03-9558-E9E0708A985D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExerciseThreeSumAdjacentEqualNumbers", "ExerciseThreeSumAdjacentEqualNumbers\ExerciseThreeSumAdjacentEqualNumbers.csproj", "{E53E3001-A179-4204-9417-F0B9E70329D0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{FBA26F7C-2B4B-4F03-9558-E9E0708A985D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FBA26F7C-2B4B-4F03-9558-E9E0708A985D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FBA26F7C-2B4B-4F03-9558-E9E0708A985D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E53E3001-A179-4204-9417-F0B9E70329D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E53E3001-A179-4204-9417-F0B9E70329D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E53E3001-A179-4204-9417-F0B9E70329D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E53E3001-A179-4204-9417-F0B9E70329D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
