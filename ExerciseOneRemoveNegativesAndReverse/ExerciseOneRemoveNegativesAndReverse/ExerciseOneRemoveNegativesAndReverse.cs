@@ -7,7 +7,6 @@ class ExerciseOneRemoveNegativesAndReverse
 {
     static void Main(string[] args)
     {
-
         int[] input = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
         List<int> result = new List<int>();
         for (int i = 0; i < input.Length; i++)
@@ -18,7 +17,14 @@ class ExerciseOneRemoveNegativesAndReverse
             }
         }
         result.Reverse();
-        Console.WriteLine(String.Join(" ", result));
+        if (result.Count>0)
+        {
+            Console.WriteLine(String.Join(" ", result));
+        }
+        else
+        {
+            Console.WriteLine("empty");
+        }
     }
 }
 
