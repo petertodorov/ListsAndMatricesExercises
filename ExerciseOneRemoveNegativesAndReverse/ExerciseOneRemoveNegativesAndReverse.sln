@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExerciseTwoAppendLists", "E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExerciseThreeSumAdjacentEqualNumbers", "ExerciseThreeSumAdjacentEqualNumbers\ExerciseThreeSumAdjacentEqualNumbers.csproj", "{E53E3001-A179-4204-9417-F0B9E70329D0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExerciseFourSplitByWordCasing", "..\ExerciseFourSplitByWordCasing\ExerciseFourSplitByWordCasing.csproj", "{25ECE1D9-DB7A-494B-AE84-EEBAF845C130}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{E53E3001-A179-4204-9417-F0B9E70329D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E53E3001-A179-4204-9417-F0B9E70329D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E53E3001-A179-4204-9417-F0B9E70329D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25ECE1D9-DB7A-494B-AE84-EEBAF845C130}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25ECE1D9-DB7A-494B-AE84-EEBAF845C130}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25ECE1D9-DB7A-494B-AE84-EEBAF845C130}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25ECE1D9-DB7A-494B-AE84-EEBAF845C130}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
