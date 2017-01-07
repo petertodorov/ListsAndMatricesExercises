@@ -20,7 +20,7 @@ class ExerciseThreeSumAdjacentEqualNumbers
                 i=i-2;
                 if (i<0)
                 {
-                    i = 0;
+                    i=0;
                 }
             }
            
