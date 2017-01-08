@@ -12,13 +12,21 @@ class ExerciseSixSquareNumbers
         List<int> squares = new List<int>();
         foreach (var number in input)
         {
-            if (Math.Sqrt(number) == (int)Math.Sqrt(number))
+            if (CheckSquare(number))
             {
                 squares.Add(number);
             }
         }
+        SortAndPrint(squares);
+    }
+    static bool CheckSquare(int number)
+    {
+        return Math.Sqrt(number) == (int)Math.Sqrt(number);
+    }
+
+    static void SortAndPrint(List<int> squares)
+    {
         squares.Sort((a, b) => b.CompareTo(a));
         Console.WriteLine(String.Join(" ", squares));
     }
 }
-
