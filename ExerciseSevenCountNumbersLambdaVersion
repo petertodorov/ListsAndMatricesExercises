@@ -1,0 +1,18 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+class ExerciseSevenCountNumbers
+{
+    static void Main(string[] args)
+    {
+        List<int> input = Console.ReadLine().Split(' ').Select(int.Parse).ToList();
+        List<int> distinctNumbers = new List<int>(input.Distinct().OrderBy(x => x));
+        foreach (var num in distinctNumbers)
+        {
+            int count = input.Count(x => x == num);
+            Console.WriteLine($"{num} -> {count}");
+        }
+    }
+}
