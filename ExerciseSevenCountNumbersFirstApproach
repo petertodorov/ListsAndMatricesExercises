@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+class ExerciseSevenCountNumbers
+{
+    static void Main(string[] args)
+    {
+        List<int> input = Console.ReadLine().Split(' ').Select(int.Parse).ToList();
+        int[] counter = new int[1000];
+        CountNumbers(input, counter);
+        PrintResult(counter);
+    }
+
+    static void CountNumbers(List<int> input, int[] counter)
+    {
+        for (int i = 0; i < input.Count; i++)
+        {
+            counter[input[i]]++;
+        }
+    }
+    static void PrintResult(int[] counter)
+    {
+        for (int i = 0; i < counter.Length; i++)
+        {
+            if (counter[i] > 0)
+            {
+                Console.WriteLine($"{i}- >{counter[i]} ");
+            }
+        }
+    }
+}
