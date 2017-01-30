@@ -17,14 +17,14 @@ class ExerciseSixSquareNumbers
                 squares.Add(number);
             }
         }
-        SortAndPrint(squares);
+        SortAndPrintResult(squares);
     }
     static bool CheckSquare(int number)
     {
         return Math.Sqrt(number) == (int)Math.Sqrt(number);
     }
 
-    static void SortAndPrint(List<int> squares)
+    static void SortAndPrintResult(List<int> squares)
     {
         squares.Sort((a, b) => -a.CompareTo(b));
         Console.WriteLine(String.Join(" ", squares));
