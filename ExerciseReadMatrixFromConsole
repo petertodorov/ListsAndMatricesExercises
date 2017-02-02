@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+class ExerciseReadMatrixFromConsole
+{
+    static void Main(string[] args)
+    {
+        int rows = int.Parse(Console.ReadLine());
+        string[][] matrix = new string[rows][];
+        for (int row = 0; row < rows; row++)
+        {
+            matrix[row] = Console.ReadLine().Split(' ');
+        }
+        foreach (var row in matrix)
+        {
+            Console.WriteLine(String.Join(" ", row));
+        }
+    }
+}
+
+
