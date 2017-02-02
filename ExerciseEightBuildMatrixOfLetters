@@ -1,0 +1,41 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+class ExerciseEightBuildMatrixOfLetters
+{
+    static void Main(string[] args)
+    {
+        int r = int.Parse(Console.ReadLine());
+        int c = int.Parse(Console.ReadLine());
+        char[][] letters = new char [r][];
+        char first = 'A';
+        PopulateMatrix(r, c, letters, first);
+        PrintMatrix(r, c, letters);
+    }
+    static void PopulateMatrix(int r,int c, char[][] letters, char first)
+    {
+        for (int row = 0; row < r; row++)
+        {
+            letters[row] = new char[c];
+            for (int col = 0; col < c; col++)
+            {
+                letters[row][col] = first;
+                first++;
+            }
+        }
+    }
+    static void PrintMatrix(int r, int c, char[][] letters)
+    {
+        for (int i = 0; i < r; i++)
+        {
+            for (int j = 0; j < c; j++)
+            {
+                Console.Write($"{letters[i][j]}");
+            }
+            Console.WriteLine();
+        }
+    }
+}
+
