@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+class MatrixPalindromes
+{
+    static void Main(string[] args)
+    {
+        int[] dimensions = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
+        char a = 'a';
+        for (int row = 0; row < dimensions[0]; row++)
+        {
+            for (int col = 0; col < dimensions[1]; col++)
+            {
+                Console.Write($"{(char)(a+row)}{(char)(a+col+row)}{(char)(a+row)} ");
+            }
+            Console.WriteLine();
+        }
+    }
+}
+
+
