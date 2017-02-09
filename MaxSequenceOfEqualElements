@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+class MaxSequenceOfEqualElements
+{
+    static void Main(string[] args)
+    {
+        List<int> input = Console.ReadLine().Split(' ').Select(int.Parse).ToList();
+        int currentSeq = 1;
+        int bestSeq = int.MinValue;
+        int currentBestNumber = 0;
+        for (int pos = 0; pos < input.Count - 1; pos++)
+        {
+            if (input[pos] == input[pos + 1])
+            {
+                currentSeq++;
+                if (currentSeq > bestSeq)
+                {
+                    bestSeq = currentSeq;
+                    currentBestNumber = input[pos];
+                }
+            }
+            else
+            {
+                currentSeq = 1;
+            }
+        }
+        for (int i = 0; i < bestSeq; i++)
+        {
+            Console.Write(currentBestNumber + " ");
+        }
+    }
+}
