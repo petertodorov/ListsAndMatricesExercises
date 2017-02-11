@@ -1,0 +1,19 @@
+using System;
+using System.Linq;
+using System.Collections.Generic;
+
+class SumReversedNumbers
+{
+    static void Main()
+    {
+        string[] input = Console.ReadLine().Split(' ');
+        int sum = 0; 
+        for (int i = 0; i < input.Length; i++)
+        {
+            char[] number = input[i].ToCharArray();
+            Array.Reverse(number);
+            sum +=  int.Parse(String.Join("",number));
+        }
+        Console.WriteLine(sum);
+    }
+}
