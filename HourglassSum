@@ -1,38 +1,37 @@
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-class HourglassSum
+using System.Collections.Generic;
+
+class HourgalssSum
 {
-    static void Main(string[] args)
+    static void Main()
     {
         int[][] matrix = new int[6][];
-        int sum = 0;
-        int largestSum = 0;
-        int counter = 0;
         for (int row = 0; row < 6; row++)
         {
             matrix[row] = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
         }
-
-        for (int row = 0; row < 6; row++)
+        int maxSum = 0;
+        for (int row = 0; row < 4; row++)
         {
-            for (int col = 0; col < 6; col++)
+            for (int col = 0; col < 4; col++)
             {
-                if (matrix[row][col] != 0)
-                    counter++;
+                int currentSum = 0;
+
+                for (int hRow = row; hRow < row + 3; hRow++)
                 {
-                    sum += matrix[row][col];
-                    if (counter >= 7)
+                    for (int hCol = col; hCol < col + 3; hCol++)
                     {
-                        largestSum = sum;
-                        sum = 0;
-                        counter = 0;
+                        currentSum += matrix[hRow][hCol];
                     }
+                }
+                currentSum -= matrix[row + 1][col];
+                currentSum -= matrix[row + 1] [col + 2];
+                if (currentSum > maxSum)
+                { maxSum = currentSum;
                 }
             }
         }
-        Console.WriteLine(largestSum);
+        Console.WriteLine(maxSum);
     }
 }
